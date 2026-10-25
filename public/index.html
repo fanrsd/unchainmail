@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>UnchainMail — Disposable Email</title>
+  <meta name="description" content="Instant, private, disposable email. No signup, no tracking." />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <h1 class="brand">
+        <span aria-hidden="true" class="brand-mark">✉</span> UnchainMail
+      </h1>
+      <p class="tagline">Disposable email. No signup. No tracking.</p>
+    </div>
+  </header>
+
+  <main id="main" class="wrap">
+    <section class="address-card" aria-labelledby="addr-heading">
+      <h2 id="addr-heading" class="visually-hidden">Your temporary address</h2>
+
+      <div class="address-row">
+        <label for="address" class="visually-hidden">Email address</label>
+        <input
+          id="address"
+          class="address-input"
+          type="text"
+          readonly
+          aria-live="polite"
+          value="Generating…"
+        />
+        <button id="copy-btn" class="btn btn-primary" type="button">
+          Copy
+        </button>
+      </div>
+
+      <div class="address-meta">
+        <p id="expiry" class="expiry" role="status" aria-live="polite">
+          &nbsp;
+        </p>
+        <div class="address-actions">
+          <button id="extend-btn" class="btn btn-ghost" type="button">
+            Extend
+          </button>
+          <button id="new-btn" class="btn btn-ghost" type="button">
+            New address
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="inbox" aria-labelledby="inbox-heading">
+      <div class="inbox-bar">
+        <h2 id="inbox-heading">Inbox</h2>
+        <div class="inbox-bar-actions">
+          <span id="refresh-status" class="refresh-status" aria-live="polite"></span>
+          <button id="refresh-btn" class="btn btn-ghost" type="button">
+            Refresh
+          </button>
+        </div>
+      </div>
+
+      <ul id="message-list" class="message-list" aria-live="polite">
+        <li class="empty-state">Waiting for the first message…</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Message viewer dialog -->
+  <dialog id="viewer" class="viewer" aria-labelledby="viewer-subject">
+    <article class="viewer-inner">
+      <header class="viewer-head">
+        <h2 id="viewer-subject" class="viewer-subject"></h2>
+        <button id="viewer-close" class="btn btn-ghost" type="button" aria-label="Close message">
+          ✕
+        </button>
+      </header>
+      <dl class="viewer-meta">
+        <div><dt>From</dt><dd id="viewer-from"></dd></div>
+        <div><dt>Received</dt><dd id="viewer-date"></dd></div>
+      </dl>
+      <div class="viewer-tabs" role="tablist">
+        <button id="tab-text" class="tab" role="tab" aria-selected="true" type="button">Text</button>
+        <button id="tab-html" class="tab" role="tab" aria-selected="false" type="button">HTML</button>
+      </div>
+      <pre id="viewer-text" class="viewer-text" role="tabpanel" tabindex="0"></pre>
+      <iframe
+        id="viewer-html"
+        class="viewer-html"
+        role="tabpanel"
+        title="HTML message content"
+        sandbox=""
+        hidden
+      ></iframe>
+      <footer class="viewer-foot">
+        <button id="viewer-delete" class="btn btn-danger" type="button">
+          Delete message
+        </button>
+      </footer>
+    </article>
+  </dialog>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>
+        UnchainMail is privacy-first: no analytics, no tracking cookies, no IP
+        logging. Messages and addresses are deleted automatically when they
+        expire.
+      </p>
+    </div>
+  </footer>
+
+  <script src="/app.js" defer></script>
+</body>
+</html>

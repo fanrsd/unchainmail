@@ -1,0 +1,25 @@
+{
+  "name": "unchainmail",
+  "version": "1.0.0",
+  "description": "Self-hosted, privacy-focused disposable email service on Cloudflare",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "setup": "node scripts/setup.mjs",
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "typecheck": "tsc --noEmit",
+    "db:init": "wrangler d1 migrations apply unchainmail",
+    "db:init:local": "wrangler d1 migrations apply unchainmail --local",
+    "cf-typegen": "wrangler types"
+  },
+  "dependencies": {
+    "hono": "^4.6.14",
+    "postal-mime": "^2.4.4"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20241218.0",
+    "typescript": "^5.7.2",
+    "wrangler": "^3.95.0"
+  }
+}
