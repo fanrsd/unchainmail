@@ -1,3 +1,7 @@
+<div align="center">
+  <img src=".github/assets/banner.svg" alt="unchainmail — Self-hosted disposable email on Cloudflare Workers. No signup." width="100%">
+</div>
+
 # UnchainMail
 
 Self-hosted, privacy-focused disposable email. Open the site and instantly get a

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-label="unchainmail">
+<defs>
+<radialGradient id="g1" cx="88%" cy="105%" r="75%"><stop offset="0" stop-color="#24157a" stop-opacity=".6"/><stop offset="1" stop-color="#24157a" stop-opacity="0"/></radialGradient>
+<radialGradient id="g2" cx="2%" cy="-10%" r="55%"><stop offset="0" stop-color="#5fe0f0" stop-opacity=".10"/><stop offset="1" stop-color="#5fe0f0" stop-opacity="0"/></radialGradient>
+<linearGradient id="live" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ff7a1a" stop-opacity=".45"/><stop offset=".55" stop-color="#24157a" stop-opacity=".55"/><stop offset="1" stop-color="#5fe0f0" stop-opacity=".22"/></linearGradient>
+</defs>
+<rect width="1200" height="300" fill="#000"/>
+<rect width="1200" height="300" fill="url(#g1)"/>
+<rect width="1200" height="300" fill="url(#g2)"/>
+<rect x="748" y="42" width="412" height="216" rx="18" fill="#07070a" fill-opacity=".72" stroke="#24157a"/>
+<circle cx="78" cy="90" r="4" fill="#5fe0f0"><animate attributeName="opacity" values="1;.25;1" dur="2.4s" repeatCount="indefinite"/></circle>
+<text x="92" y="96" font-family="Consolas,monospace" font-size="17" fill="#5fe0f0">fanrsd/unchainmail</text>
+<text x="70" y="152" font-family="'Segoe UI',system-ui,sans-serif" font-size="52" font-weight="700" fill="#f2f3ee">unchainmail</text>
+<rect x="70" y="170" width="64" height="5" rx="2.5" fill="#ff7a1a"/>
+<text x="70" y="210" font-family="'Segoe UI',system-ui,sans-serif" font-size="21" fill="#9aa0a6">Self-hosted disposable email on Cloudflare Workers. No signup.</text>
+<rect x="70" y="238" width="122" height="30" rx="15" fill="#0b0b0c" stroke="#2c2c2e"/><circle cx="86" cy="253" r="5" fill="#3178c6"/><text x="99" y="259" font-family="Consolas,monospace" font-size="15" fill="#cfd2cb">TypeScript</text><rect x="202.0" y="238" width="122" height="30" rx="15" fill="#0b0b0c" stroke="#2c2c2e"/><circle cx="218.0" cy="253" r="5" fill="#ff7a1a"/><text x="231.0" y="259" font-family="Consolas,monospace" font-size="15" fill="#cfd2cb">Cloudflare</text>
+
+<rect x="770" y="70" width="150" height="96" rx="10" fill="#0d0d10" stroke="#2c2c2e"/>
+<path d="M770 82 l75 50 75 -50" stroke="#3a3a42" stroke-width="2" fill="none"/>
+<rect x="946" y="96" width="40" height="20" rx="10" fill="none" stroke="#5fe0f0" stroke-width="3" transform="rotate(-18 966 106)"/>
+<rect x="992" y="96" width="40" height="20" rx="10" fill="none" stroke="#5fe0f0" stroke-width="3" transform="rotate(-18 1012 106)"/>
+<path d="M986 100 l4 -8 m2 12 l6 -6" stroke="#ff7a1a" stroke-width="2.5" stroke-linecap="round"/>
+<rect x="1050" y="84" width="88" height="28" rx="14" fill="#0b0b0c" stroke="#2c2c2e"/>
+<text x="1064" y="103" font-family="Consolas,monospace" font-size="12" fill="#ff9d55">24h left</text>
+<rect x="946" y="140" width="192" height="26" rx="8" fill="#0b0b0c" stroke="#222226"/>
+<rect x="958" y="151" width="60" height="5" rx="2.5" fill="#3a3a42"/><circle cx="1118" cy="153" r="4" fill="#5fe0f0"/>
+<rect x="946" y="174" width="192" height="26" rx="8" fill="#0b0b0c" stroke="#222226"/>
+<rect x="958" y="185" width="86" height="5" rx="2.5" fill="#3a3a42"/><circle cx="1118" cy="187" r="4" fill="#3a3a42"/>
+<text x="770" y="196" font-family="Consolas,monospace" font-size="12" fill="#6c6f74">inbox expires by itself</text>
+</svg>
